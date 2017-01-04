@@ -21,28 +21,21 @@
   <body>
     <header>
       <h1>
-        A Dream of the Future
+      Palindromes are NOT a kind of CAMEL!
       </h1>
     </header>
 
     <main>
-      <p class="bold">Oh hi,</p>
-      <p>Tell me your hopes and dreams:</p>
+      <p class="bold">Enter a string to check whether it is a palindrome:</p>
+      <p>A palindrome is a word or phrase spelled the same forwards as it is backwards once all non-alphanumeric characters are removed and 
+      all letters are set to the same case. For instance, "tacocat", "racecar", and "eye" are palindromes. 
+      In this version "_eye" or "_?&taco_&cAt_*" are also palindromes, whereas "camel" is NOT.</p>
       <form>
-        <input type="text" maxlength="100" placeholder="Dreams!">
-        <button type="submit">Submit</button>
+        <input name="str" id="str" type="text" maxlength="100" placeholder="Enter your palindrome!">
+        <button>Check!</button>
       </form>
-      <section class="dreams">
-        <ul id="dreams">
-        </ul>
-      </section>
     </main>
 
-    <footer>
-      <a href="https://gomix.com">
-        Remix this in Gomix
-      </a>
-    </footer>
 
     <!-- Your web-app is https, so your scripts need to be too -->
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"
