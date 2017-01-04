@@ -33,7 +33,8 @@ $('button').on('click', function palindrome() {
   str = str.toLowerCase();
   
   // remove all non-alphanumeric characters with a regular expression:
-  str = str.replace(/^A-Za-z0-9/g, '');
+  str = str.replace(/[^A-Za-z0-9]/g, '');
+  
   
   // split all remaining characters into an array:
   arr = str.split('');
@@ -47,12 +48,12 @@ $('button').on('click', function palindrome() {
   // find out if str is the same as reversestr:
   if (str === reversestr) {
     // means the string is a palindrome:
-    alert(str + ' IS a palindrome since backwards it is ALSO spelled ' + reversestr);
+    $('.showresults').html(str + ' IS a palindrome since backwards it is ALSO spelled ' + reversestr);
     return true;
   }
   
   // if the string is not a palindrome:
-  alert(str + ' is NOT a palindrome since backwards it is spelled ' + reversestr);
+  $('.showresults').html(str + ' is NOT a palindrome since backwards it is spelled ' + reversestr);
   return false;
   
 });
